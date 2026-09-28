@@ -1,17 +1,8 @@
 // ================================================================================
 // FoXcodeZ Libs source code.
 // Copyright (c) 2026 Marcin "FoXcodeZ" Grabowy.
-// License: MIT
 // SPDX-License-Identifier: MIT
 // ================================================================================
 
 #pragma once
-
-namespace fxz
-{
-    struct WindowDesc
-    {
-        const char* title {"FXZ Window"};
-        
-    };
-}
+#include "core/BasicTypes.hpp"

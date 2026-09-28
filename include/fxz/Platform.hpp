@@ -5,4 +5,5 @@
 // SPDX-License-Identifier: MIT
 // ================================================================================
 
-#include "fxz/Core.hpp"
+#pragma once
+#include "platform/Window.hpp"
