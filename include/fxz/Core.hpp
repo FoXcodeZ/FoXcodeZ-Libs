@@ -6,3 +6,4 @@
 
 #pragma once
 #include "core/BasicTypes.hpp"
+#include "core/Size2.hpp"
