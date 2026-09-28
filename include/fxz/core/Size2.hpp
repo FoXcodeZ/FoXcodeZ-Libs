@@ -1,7 +1,6 @@
 // ================================================================================
 // FoXcodeZ Libs source code.
 // Copyright (c) 2026 Marcin "FoXcodeZ" Grabowy.
-// License: MIT
 // SPDX-License-Identifier: MIT
 // ================================================================================
 
@@ -10,13 +9,15 @@
 
 namespace fxz
 {
-    class Window
+    template<typename T>
+    struct Size2T
     {
-    public:
-        void create(const char* title);
-        void destroy();
-    private:
-        inline static u64 m_nextId = 1;
-        u64 m_id = 0;
+        T w {};
+        T h {};
     };
+
+    using Size2     = Size2T<f32>;
+    using Size2f    = Size2T<f32>;
+    using Size2i    = Size2T<i32>;
+    using Size2u    = Size2T<u32>;
 }
